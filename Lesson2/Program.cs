@@ -10,6 +10,14 @@ namespace Lesson2
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Введите максимальную температуру");
+            int maxTemp = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Введите минимальную температуру");
+            int minTemp = Convert.ToInt32(Console.ReadLine());
+
+            int middleTemp = (maxTemp + minTemp) / 2;
+            Console.WriteLine($"Средняя температура {middleTemp} градусов");
         }
     }
 }
